@@ -1,6 +1,6 @@
 # Window Select by Hand Gesture on Windows
 手のハンドサインをWeb CamでキャプチャしてWindows上に開いているWindowをキーボードとマウスなしで選択します。[Hand Gestureを学習させたYOLOv8のモデル](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures)をOpenVINOで軽量化したモデルを利用して、NPUで動作をさせることにより利用するリソースも軽減させます。
-Select Window on Windows by Web Cam captruing hand gestures, using hand gesture model on OpenVINO and offloading task to NPU for reducing running cost. 
+Select Window on Windows by Web Cam captruing hand gestures, using hand gesture model on OpenVINO with quantization, it can offload task to NPU. 
 
 # Recommended Settings
 - Python v3.10
@@ -12,7 +12,7 @@ Select Window on Windows by Web Cam captruing hand gestures, using hand gesture 
 
 [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) のモデルをベースとしています。このモデルはアルファベットのハンドジェスチャーを入力されたイメージから検知、認識をおこないます。そのうち "H", "S", "T", "V", "W", "O" の文字のジェスチャーを利用してWindowsのコントロールに使っています。
 
-This script is baded on [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) model. This model can detect alphabets [hand gestures based on YOLOv8 model](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) from input image. This scipt uses "H", "S", "T", "V", "W" and "O" charactors from these gestures. (Actually these gestrues can be detected more accurately). 
+This script is baded on [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) model. This model can detect alphabets hand gestures based on YOLOv8 model from input image. This scipt uses "H", "S", "T", "V", "W" and "O" charactors from these gestures. (Actually these gestrues can be detected more accurately). 
 
 
 # Setup
