@@ -14,6 +14,7 @@ Select Window on Windows by Web Cam captruing hand gestures, using hand gesture 
 
 This script is baded on [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) model. This model can detect alphabets hand gestures based on YOLOv8 model from input image. This scipt uses "H", "S", "T", "V", "W" and "O" charactors from these gestures. (Actually these gestrues can be detected more accurately). 
 
+!["HandGestureMap"](gesture_map.png)
 
 # Setup
 1. Install Python on your windows (set path for python execution file) 
