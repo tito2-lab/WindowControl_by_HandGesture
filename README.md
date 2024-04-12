@@ -12,7 +12,7 @@ Select Window on Windows by Web Cam captruing hand gestures, using hand gesture 
 
 [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) のモデルをベースとしています。このモデルはアルファベットのハンドジェスチャーを入力されたイメージから検知、認識をおこないます。そのうち "H", "S", "T", "V", "W", "O" の文字のジェスチャーを利用してWindowsのコントロールに使っています。
 
-This script is baded on [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) model. This model can detect alphabets hand gestures from input image. This scipt uses "H", "S", "T", "V", "W" and "O" charactors from these gestures. (Actually these gestrues can be detected more accurately). 
+This script is baded on [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) model. This model can detect alphabets [hand gestures based on YOLOv8 model](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) from input image. This scipt uses "H", "S", "T", "V", "W" and "O" charactors from these gestures. (Actually these gestrues can be detected more accurately). 
 
 
 # Setup
