@@ -1,11 +1,12 @@
 # Window Select by Hand Gesture on Windows
-手のハンドサインをWeb CamでキャプチャしてWindows上に開いているWindowをキーボードとマウスなしで選択します。Hand GestureのモデルをOpenVINOで軽量化したモデルを利用して、NPUで動作をさせることにより利用するリソースも軽減させます。
+手のハンドサインをWeb CamでキャプチャしてWindows上に開いているWindowをキーボードとマウスなしで選択します。[Hand Gestureを学習させたYOLOv8のモデル](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures)をOpenVINOで軽量化したモデルを利用して、NPUで動作をさせることにより利用するリソースも軽減させます。
 Select Window on Windows by Web Cam captruing hand gestures, using hand gesture model on OpenVINO and offloading task to NPU for reducing running cost. 
 
 # Recommended Settings
 - Python v3.10
 - Windows 11
 - Intel(r) Core(TM) Ultra if running on NPU (Intel(r) AI Boost)
+- Intel(r) NPU driver 32.0.100.2267 or later
 
 # Available Hand Gestures
 
@@ -24,7 +25,7 @@ handgestenv\Scripts\activate
 3. Install libraries and run on Jupyter
 ```
 pip install -r requirements.txt
-jupyter lab WindowSelectHandGesture.ipnb
+jupyter lab hand_gesture.ipnb
 ```
 
 # Reference
