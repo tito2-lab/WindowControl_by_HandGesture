@@ -37,4 +37,5 @@ jupyter lab hand_gesture.ipnb
 # Reference
 - Yolov8x Tuned to Hand Gestures (HF) : [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures)
 - Convert and Optimize YOLOv8 real-time object detection with OpenVINO™ (GitHub): [notebooks/yolov8-optimization/yolov8-object-detection.ipynb](https://github.com/openvinotoolkit/openvino_notebooks/blob/latest/notebooks/yolov8-optimization/yolov8-object-detection.ipynb)
+- PyAutoGUI: [https://pyautogui.readthedocs.io/en/latest/](https://pyautogui.readthedocs.io/en/latest/)
 - Hand Gesture Image: [https://www.freepik.com/free-vector/hand-gesture-language-alphabet_2776330.htm#from_view=detail_alsolike](https://www.freepik.com/free-vector/hand-gesture-language-alphabet_2776330.htm#from_view=detail_alsolike)
