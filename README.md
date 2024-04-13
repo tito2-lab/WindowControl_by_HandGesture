@@ -13,8 +13,10 @@ Select Window on Windows by Web Cam captruing hand gestures, using hand gesture 
 # Available Hand Gestures
 
 [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) のモデルをベースとしています。このモデルはアルファベットのハンドジェスチャーを入力されたイメージから検知、認識をおこないます。そのうち "H", "S", "T", "V", "W", "O" の文字のジェスチャーを利用してWindowsのコントロールに使っています。
+それぞれのハンドジェスチャーの検出した文字に、[PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/)を使ったキーボード入力をアサインさせることでコントロールをします。"U"を "Alt+Tab"にアサインすることで、Windowの選択表示を呼び出して、”H"と"O"にて移動して、”V"にて最終的なWindowの選択を行っています。
 
-This script is baded on [lewiswatson/yolov8x-tuned-hand-gestures](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures) model. This model can detect alphabets hand gestures based on YOLOv8 model from input image. This scipt uses "H", "S", "T", "V", "W" and "O" charactors from these gestures. (Actually these gestrues can be detected more accurately). 
+This script is baded on [PyAutoGUI]([https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures](https://pyautogui.readthedocs.io/en/latest/) model. This model can detect alphabets hand gestures based on YOLOv8 model from input image. This scipt uses "U", "H", "S", "V", "W" and "O" charactors from these gestures. (Actually these gestrues can be detected more accurately). 
+Each letter is assigned to keyboard input with [PyAutoGUI]([https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures](https://pyautogui.readthedocs.io/en/latest/), example, "U" is assigned to "Alt+Tab" then showing opened Window list. Then "H" and "O" can move selected window, finally "V" to select. 
 
 !["HandGestureMap"](gesture_map.png)
 
