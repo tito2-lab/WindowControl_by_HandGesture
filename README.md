@@ -1,5 +1,5 @@
 # Window Select by Hand Gesture on Windows
-手のハンドサインをWeb CamでキャプチャしてWindows上に開いているWindowをキーボードとマウスなしで選択します。[Hand Gestureを学習させたYOLOv8のモデル](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures)をOpenVINOで軽量化したモデルを利用して、Intel NPUで動作をさせることが可能となります。
+手のハンドサインをWeb CamでキャプチャしてWindows上に開いているWindowをキーボードとマウスなしで選択します。[Hand Gestureを学習させたYOLOv8のモデル](https://huggingface.co/lewiswatson/yolov8x-tuned-hand-gestures)をOpenVINOで軽量化したモデルを利用して、Intel NPUで動作をさせることを可能としています。
 Select Window on Windows by Web Cam captruing hand gestures, using hand gesture model on OpenVINO with quantization, it can offload task to NPU. 
 
 !["Demo"](demovideo.gif)
@@ -28,7 +28,13 @@ Each letter is assigned to keyboard input with [PyAutoGUI]([https://huggingface.
 python -m venv handgestenv
 handgestenv\Scripts\activate
 ```
-3. Install libraries and run on Jupyter
+3. Download files
+```
+cd handgestenv
+git clone https://github.com/tito2-lab/WindowControl_by_HandGesture.git
+cd WindowControl_by_HandGesture
+```
+4. Install libraries and run on Jupyter
 ```
 pip install -r requirements.txt
 jupyter lab hand_gesture.ipnb
