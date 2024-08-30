@@ -1,4 +1,4 @@
-jupyterlab==4.1.6
+jupyterlab==4.2.5
 openvino==2024.0
 ultralytics==8.1.45
 torch==2.1.2
